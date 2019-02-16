@@ -1,7 +1,7 @@
 node default {
   file {'/root/README':
     ensure  => file,
-    content => {'hello'},
+    content => 'hello',
     }
   notify {'this is a test':
     }
