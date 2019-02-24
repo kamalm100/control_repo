@@ -6,3 +6,8 @@ node default {
   }
   notify {'Processing Complete':}
 }
+
+node 'web.home.com' {
+  include role::master_server
+}
+
