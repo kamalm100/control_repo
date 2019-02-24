@@ -5,7 +5,7 @@ class profile::base {
   
   file {'/root/server.info':
      ensure  => present,
-     content => $fqdn,
+     content => "welcome to ${fqdn}\n",
   }
   
   include profile::ssh_server
