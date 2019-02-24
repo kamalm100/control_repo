@@ -5,8 +5,4 @@ node default {
     owner   => 'root',
   }
   notify {'Processing Complete':}
-  
-  file {'/root/README':
-    owner => root,
-  }
 }
