@@ -8,6 +8,6 @@ node default {
 }
 
 node 'web.home.com' {
-  notify {'hjgsjhdgjshfgsj':}
+  include role::master_server
 }
 
