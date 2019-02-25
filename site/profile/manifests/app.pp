@@ -1,3 +1,1 @@
-class profile::app {
-  include profile::base
-}
+class profile::app {}
