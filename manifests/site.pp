@@ -6,18 +6,18 @@ node default {
   }
   include profile::ssh_server
 
-  notify {'Processing Complete':}
-}
+  notify {'Processing Complete':
+  }
 
 node /^web/ {
   include role::app_server
-}
+  }
 
 node /^db/ {
   include role::db_server
-}
+  }
 
 node 'minecraft.home.com' {
   include role::minecraft_server
- }
+  }
 }
