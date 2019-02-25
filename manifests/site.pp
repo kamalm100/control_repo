@@ -4,8 +4,7 @@ node default {
     content => 'This is a readme',
     owner   => 'root',
   }
-  include profile::ssh_server
-
+  
 node 'minecraft.home.com' {
   include role::minecraft_server
   }
@@ -17,4 +16,3 @@ node /^web/ {
 node /^db/ {
   include role::db_server
   }
-}
