@@ -6,7 +6,8 @@ node default {
   }
   include profile::ssh_server
 
-  notify {'Processing Complete':
+node 'minecraft.home.com' {
+  include role::minecraft_server
   }
 
 node /^web/ {
@@ -15,9 +16,5 @@ node /^web/ {
 
 node /^db/ {
   include role::db_server
-  }
-
-node 'minecraft.home.com' {
-  include role::minecraft_server
   }
 }
