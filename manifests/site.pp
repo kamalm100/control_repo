@@ -1,5 +1,5 @@
 node default {
-  include role::MyTestRole}
+  include role::mytestrole}
 
 node /^db/ {
   include role::db_server}
