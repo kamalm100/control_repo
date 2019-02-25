@@ -1,4 +1,4 @@
-class role::MyTest {
+class role::MyTestRole {
   include profile::base
   include profile::MyTest
  }
