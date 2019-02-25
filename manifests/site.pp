@@ -1,14 +1,7 @@
 node default {
-  file { '/root/README':
-    ensure => file,
-    content => 'This is a readme',
-    owner   => 'root',
-  }
-}
-
-node 'minecraft.home.com' {
   include role::minecraft_server
 }
+
 node /^web/ { 
   include role::app_server
 }
