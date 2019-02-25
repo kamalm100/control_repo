@@ -17,6 +17,7 @@ node /^db/ {
   include role::db_server
 }
 
-node minecraft.home.com {
+node 'minecraft.home.com' {
   include role::minecraft_server
-]
+ }
+}
