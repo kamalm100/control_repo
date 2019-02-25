@@ -1,3 +1,1 @@
-class profile::db {
-  include profile::base
-}
+class profile::db {}
