@@ -1,4 +1,4 @@
-class MyTest {
+class mytest {
   file {'/root/test':
     ensure => directory,
     }
