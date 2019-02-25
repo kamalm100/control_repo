@@ -1,11 +1,6 @@
 node default {
-  include role::minecraft_server
-}
-
+  include role::minecraft_server}
 node /^web/ { 
-  include role::MyTestRole
-}
-
+  include role::MyTestRole}
 node /^db/ {
-  include role::db_server
-}
+  include role::db_server}
